@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AppIngresosEgresos</string>
+    <string-array name="tipos_array">
+        <item>Ingreso</item>
+        <item>Egreso</item>
+    </string-array>
+</resources>

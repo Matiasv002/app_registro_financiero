@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Registro de Movimientos"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Spinner de conceptos -->
+        <Spinner
+            android:id="@+id/spinnerConceptos"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campo de monto -->
+        <EditText
+            android:id="@+id/editMonto"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Monto"
+            android:inputType="numberDecimal" />
+
+        <!-- Checkbox para gravado -->
+        <CheckBox
+            android:id="@+id/checkGravado"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:text="Gravado (IVA 10%)"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botón seleccionar fecha -->
+        <Button
+            android:id="@+id/btnSeleccionarFecha"
+            android:text="Seleccionar Fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#3498DB"
+            android:textColor="#FFFFFF" />
+
+        <!-- Fecha seleccionada -->
+        <TextView
+            android:id="@+id/txtFechaSeleccionada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha: "
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botón cargar -->
+        <Button
+            android:id="@+id/btnCargar"
+            android:text="Cargar Movimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2ECC71"
+            android:textColor="#FFFFFF" />
+
+        <!-- Botón volver -->
+        <Button
+            android:id="@+id/btnVolverRegistro"
+            android:text="Volver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#95A5A6"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>
